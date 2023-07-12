@@ -1,0 +1,1847 @@
+header {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  width: 1190px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 108px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+}
+
+.header > .logo > a > img {
+  position: relative;
+  width: 108px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header > nav {
+  width: 1082px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  line-height: 70px;
+}
+
+.header > nav > ul {
+  list-style: none;
+  padding: 0 0 0 25px;
+  position: absolute;
+}
+
+.header > nav > ul > li {
+  position: relative;
+  float: left;
+  font-family: sans-serif;
+  padding: 0 10px;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.header > nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.header > nav > ul > li:nth-child(1):hover > a,
+.header > nav > ul > li:nth-child(2):hover > a,
+.header > nav > ul > li:nth-child(3):hover > a,
+.header > nav > ul > li:nth-child(4):hover > a,
+.header > nav > ul > li:nth-child(5):hover > a,
+.header > nav > ul > li:nth-child(6):hover > a,
+.header > nav > ul > li:nth-child(7):hover > a,
+.header > nav > ul > li:nth-child(8):hover > a {
+  color: cornflowerblue;
+}
+
+.header > nav > ul > li::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: cornflowerblue;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition: 400ms;
+  transform: translate(-50%, 0);
+}
+
+.header > nav > ul > li:last-child::before {
+  display: none;
+}
+
+.header > nav > ul > li:hover::before {
+  width: 70%;
+}
+.header > nav > ul > li:nth-child(1) {
+  font-weight: bolder;
+}
+
+.header > nav > ul > li:last-child > ul {
+  list-style: none;
+}
+
+.header > nav > ul > li:last-child > ul > li {
+  position: relative;
+  float: left;
+  font-family: sans-serif;
+  padding: 0 10px;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  padding: 0 7px;
+}
+
+.header > nav > ul > li:last-child > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.header > nav > ul > li:last-child > ul > li:hover > a {
+  color: cornflowerblue;
+}
+
+.businesses {
+  width: 450px;
+  height: 553px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.businesses::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(45px, -50px);
+}
+
+.businesses > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.businesses > a:hover::before,
+.businesses > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.businesses > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.businesses > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.businesses > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.businesses > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -12%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.businesses > div > h2 > a:hover::before {
+  right: -14%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul {
+  height: 426px;
+}
+
+.businesses > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.businesses > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.businesses > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.play::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -8%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.play:hover::before {
+  right: -10%;
+  border-color: cornflowerblue;
+}
+
+.music::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.music:hover::before {
+  right: -65%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -12%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(3) > a:hover::before {
+  right: -14%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(4) {
+  height: 156px;
+}
+
+.businesses > div > ul :nth-child(4) > a {
+  height: 74px;
+  line-height: 25px;
+  top: 0;
+}
+
+.businesses > div > ul :nth-child(4) > ul {
+  top: 74px;
+  height: 82;
+}
+
+.businesses > div > ul :nth-child(4) > ul > li {
+  padding: 50px 0 0 13px;
+}
+
+.businesses > div > ul :nth-child(4) > ul > li > a {
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(4) > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(1) {
+  height: 37px;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(2) {
+  height: 45px;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 52.5%;
+  right: 50%;
+  transform: rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(1) > a:hover::before {
+  right: 49%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  transform: rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(4) > ul :nth-child(2) > a:hover::before {
+  right: 29%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(5) {
+  margin-top: 10px;
+}
+
+.businesses > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -12%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(5) > a:hover::before {
+  right: -14%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(6) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -20%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(6) > a:hover::before {
+  right: -25%;
+  border-color: cornflowerblue;
+}
+
+.businesses > div > ul :nth-child(7) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -25%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.businesses > div > ul :nth-child(7) > a:hover::before {
+  right: -30%;
+  border-color: cornflowerblue;
+}
+
+.about {
+  width: 343px;
+  height: 487px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.about::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(30px, -50px);
+}
+
+.about > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.about > a:hover::before,
+.about > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.about > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.about > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.about > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.about > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -16%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.about > div > h2 > a:hover::before {
+  right: -18%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul {
+  height: 426px;
+}
+
+.about > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.about > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.about > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -18%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(1) > a:hover::before {
+  right: -20%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -20%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(2) > a:hover::before {
+  right: -22%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -28%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(3) > a:hover::before {
+  right: -31%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(4) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -28%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(4) > a:hover::before {
+  right: -31%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -65%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(5) > a:hover::before {
+  right: -72%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(6) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(6) > a:hover::before {
+  right: -60%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(7) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -25%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(7) > a:hover::before {
+  right: -28%;
+  border-color: cornflowerblue;
+}
+
+.about > div > ul :nth-child(8) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -20%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.about > div > ul :nth-child(8) > a:hover::before {
+  right: -22%;
+  border-color: cornflowerblue;
+}
+
+.tech {
+  width: 343px;
+  height: 487px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.tech::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(5px, -50px);
+}
+
+.tech > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.tech > a:hover::before,
+.tech > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.tech > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tech > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.tech > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.tech > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -25%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.tech > div > h2 > a:hover::before {
+  right: -28%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul {
+  height: 426px;
+}
+
+.tech > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.tech > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.tech > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -18%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(1) > a:hover::before {
+  right: -20%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 77%;
+  right: -35%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(2) > a:hover::before {
+  right: -39%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -30%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(3) > a:hover::before {
+  right: -33%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(4) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -31%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(4) > a:hover::before {
+  right: -34%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -18%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(5) > a:hover::before {
+  right: -19%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(6) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -40%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(6) > a:hover::before {
+  right: -43%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(7) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -17%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(7) > a:hover::before {
+  right: -18%;
+  border-color: cornflowerblue;
+}
+
+.tech > div > ul :nth-child(8) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -30%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.tech > div > ul :nth-child(8) > a:hover::before {
+  right: -32%;
+  border-color: cornflowerblue;
+}
+
+.employees {
+  width: 343px;
+  height: 217;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.employees::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(3px, -50px);
+}
+
+.employees > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.employees > a:hover::before,
+.employees > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.employees > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.employees > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.employees > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.employees > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -28%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.employees > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.employees > div > h2 > a:hover::before {
+  right: -30%;
+  border-color: cornflowerblue;
+}
+
+.employees > div > ul {
+  height: 90px;
+}
+
+.employees > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.employees > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.employees > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.employees > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -45%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.employees > div > ul :nth-child(1) > a:hover::before {
+  right: -49%;
+  border-color: cornflowerblue;
+}
+
+.employees > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 77%;
+  right: -33%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.employees > div > ul :nth-child(2) > a:hover::before {
+  right: -36%;
+  border-color: cornflowerblue;
+}
+
+.sustain {
+  width: 450px;
+  height: 442px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.sustain::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(5px, -50px);
+}
+
+.sustain > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.sustain > a:hover::before,
+.sustain > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.sustain > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sustain > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.sustain > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.sustain > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -22%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.sustain > div > h2 > a:hover::before {
+  right: -25%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul {
+  height: 442px;
+}
+
+.sustain > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.sustain > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.sustain > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -8%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(1) > a:hover::before {
+  right: -10%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 77%;
+  right: -20%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(2) > a:hover::before {
+  right: -23%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -33%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(3) > a:hover::before {
+  right: -37%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(4) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -22%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(4) > a:hover::before {
+  right: -25%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -15%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(5) > a:hover::before {
+  right: -17%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(6) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -35%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(6) > a:hover::before {
+  right: -39%;
+  border-color: cornflowerblue;
+}
+
+.sustain > div > ul :nth-child(7) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -19%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.sustain > div > ul :nth-child(7) > a:hover::before {
+  right: -21%;
+  border-color: cornflowerblue;
+}
+
+.design {
+  width: 343px;
+  height: 352px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.design::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(-7px, -50px);
+}
+
+.design > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.design > a:hover::before,
+.design > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.design > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.design > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.design > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.design > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -23%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.design > div > h2 > a:hover::before {
+  right: -26%;
+  border-color: cornflowerblue;
+}
+
+.design > div > ul {
+  height: 352px;
+}
+
+.design > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.design > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.design > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.design > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -60%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > ul :nth-child(1) > a:hover::before {
+  right: -70%;
+  border-color: cornflowerblue;
+}
+
+.design > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 78%;
+  right: -55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > ul :nth-child(2) > a:hover::before {
+  right: -59%;
+  border-color: cornflowerblue;
+}
+
+.design > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -18%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > ul :nth-child(3) > a:hover::before {
+  right: -19%;
+  border-color: cornflowerblue;
+}
+
+.design > div > ul :nth-child(4) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > ul :nth-child(4) > a:hover::before {
+  right: -59%;
+  border-color: cornflowerblue;
+}
+
+.design > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -70%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.design > div > ul :nth-child(5) > a:hover::before {
+  right: -78%;
+  border-color: cornflowerblue;
+}
+
+.investor {
+  width: 343px;
+  height: 352px;
+  background-color: #2b2b2b;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  padding: 24px 40px 36px;
+  display: none;
+}
+
+.investor::before {
+  content: "";
+  border: 13px solid transparent;
+  border-bottom-color: #2b2b2b;
+  position: absolute;
+  transform: translate(28px, -50px);
+}
+
+.investor > a {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.investor > a:hover::before,
+.investor > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.investor > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.investor > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.investor > div > h2 > a {
+  font-size: 17px;
+  height: 53px;
+  font-weight: 300;
+  position: relative;
+  transition: 300ms;
+}
+
+.investor > div > h2 > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 60%;
+  right: -17%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > h2 :hover {
+  color: cornflowerblue;
+}
+
+.investor > div > h2 > a:hover::before {
+  right: -20%;
+  border-color: cornflowerblue;
+}
+
+.investor > div > ul {
+  height: 352px;
+}
+
+.investor > div > ul > li {
+  height: 45px;
+  position: relative;
+}
+
+.investor > div > ul > li > a {
+  height: 45px;
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 0px;
+  position: absolute;
+  top: -50%;
+  transition: 300ms;
+}
+
+.investor > div > ul > li > a:hover {
+  color: cornflowerblue;
+}
+
+.investor > div > ul :nth-child(1) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -45%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > ul :nth-child(1) > a:hover::before {
+  right: -50%;
+  border-color: cornflowerblue;
+}
+
+.investor > div > ul :nth-child(2) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 78%;
+  right: -45%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > ul :nth-child(2) > a:hover::before {
+  right: -50%;
+  border-color: cornflowerblue;
+}
+
+.investor > div > ul :nth-child(3) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 81%;
+  right: -25%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > ul :nth-child(3) > a:hover::before {
+  right: -27%;
+  border-color: cornflowerblue;
+}
+
+.investor > div > ul :nth-child(4) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -19%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > ul :nth-child(4) > a:hover::before {
+  right: -21%;
+  border-color: cornflowerblue;
+}
+
+.investor > div > ul :nth-child(5) > a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 80%;
+  right: -17%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.investor > div > ul :nth-child(5) > a:hover::before {
+  right: -18%;
+  border-color: cornflowerblue;
+}
+
+.show {
+  display: block;
+}
+
+.icon-search {
+  float: right;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 0 8px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.devider {
+  position: relative;
+  background-color: white;
+  width: 1px;
+  height: 20px;
+  float: right;
+  transform: translate(-43px, 26px);
+}
+
+.icon-search:hover {
+  color: cornflowerblue;
+}
+
+.searchBox-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.searchBox {
+  width: 366px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 180px;
+  top: 70px;
+}
+
+.searchBox > input {
+  width: 316px;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  font-size: 1rem;
+  appearance: none;
+}
+
+.searchBox > .icon-search {
+  width: 50px;
+  height: 50px;
+  background-color: #999;
+  transition: 0.32s ease-out;
+}
+
+.searchBox > .icon-search:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+.searchBox-container > a {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 28px;
+  right: 183px;
+}
+
+.searchBox-container > a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.searchBox-container > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.searchBox-container > a:hover::before,
+.searchBox-container > a:hover::after {
+  background-color: cornflowerblue;
+}
+
+.hidden {
+  display: none;
+}

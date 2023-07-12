@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'SST W55';
+    src: url('SSTW55-Bold.eot');
+    src: url('SSTW55-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SSTW55-Bold.woff2') format('woff2'),
+        url('SSTW55-Bold.woff') format('woff'),
+        url('SSTW55-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SSTJapaneseW55';
+    src: url('SSTJapaneseW55-Regular.eot');
+    src: url('SSTJapaneseW55-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SSTJapaneseW55-Regular.woff2') format('woff2'),
+        url('SSTJapaneseW55-Regular.woff') format('woff'),
+        url('SSTJapaneseW55-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

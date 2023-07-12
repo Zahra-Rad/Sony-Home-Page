@@ -1,0 +1,49 @@
+.slider {
+  min-width: 1190px;
+  height: 520px;
+  background-color: yellow;
+}
+
+.slider-bar {
+  width: 100%;
+  height: 483px;
+  background-color: yellowgreen;
+  padding-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-section {
+  width: 695px;
+  height: 473px;
+  background-color: violet;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+}
+
+.slider-section-1 {
+  margin-left: calc((-60%) + ((100% - 695px) / 2) - 30px);
+}
+
+.slider-section > picture {
+  width: 100%;
+  height: 390px;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-section > picture > img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.slider-controls {
+  width: 100%;
+  height: 38px;
+  background-color: tomato;
+}

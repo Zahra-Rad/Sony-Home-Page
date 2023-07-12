@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+@font-face{
+    font-family: sony1;
+    src: url('../fonts/sony1/SSTW55-Bold.woff');
+    src: url('../fonts/sony1/SSTW55-Bold.woff2');
+    src: url('../fonts/sony1/SSTW55-Bold.ttf');
+    src: url('../fonts/sony1/SSTW55-Bold.eot');
+}
+@font-face{
+    font-family: sony2;
+    src: url('../fonts/sony2/SSTJapaneseW55-Regular.woff');
+    src: url('../fonts/sony2/SSTJapaneseW55-Regular.woff2');
+    src: url('../fonts/sony2/SSTJapaneseW55-Regular.ttf');
+    src: url('../fonts/sony2/SSTJapaneseW55-Regular.eot');
+}
