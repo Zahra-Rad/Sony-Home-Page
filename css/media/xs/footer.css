@@ -1,36 +1,80 @@
+.site-map {
+  display: block;
+}
+
+.site-map > a {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  border-bottom: 1px solid #bfbfbf;
+  cursor: pointer;
+}
+
+.site-map > a > h2 {
+  color: #656565;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+}
+
+.site-map > a > div {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.site-map > a > div > span {
+  position: absolute;
+  color: #656565;
+}
+
 div.english-footer {
   display: block;
 }
 
 div.english-footer > nav {
   background-color: #efefef;
-  min-width: 1190px;
+  height: 2256px;
+  overflow: hidden;
+  min-width: 100%;
   display: block;
+  transition: 300ms ease-out;
+  background-color: #efefef;
 }
 
 div.english-footer > nav > div.english-footer-inner {
   margin: 0 auto;
-  width: 1190px;
+  width: 100%;
   display: block;
+  background-color: #efefef;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul {
   display: flex;
   color: #656565;
   flex-wrap: wrap;
+  background-color: #efefef;
   padding: 10px 20px;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul > li {
-  width: 25%;
+  width: 100%;
   color: #656565;
   list-style: none;
   margin-bottom: 30px;
+  background-color: #efefef;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul > li > h3 {
   font-family: sans-serif;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 700;
   margin: 1em 0;
   display: block;
@@ -43,9 +87,9 @@ div.english-footer > nav > div.english-footer-inner > ul > li > ul {
 
 div.english-footer > nav > div.english-footer-inner > ul > li > ul > li {
   width: 100%;
-  font-size: 75%;
-  line-height: 1rem;
-  margin-bottom: 6px;
+  font-size: 88%;
+  line-height: 1.6rem;
+  margin-bottom: 5px;
   padding-right: 10px;
   font-family: sans-serif;
 }
@@ -74,8 +118,8 @@ div.english-footer > nav > div.english-footer-inner > ul > li > ul > ul {
 
 div.english-footer > nav > div.english-footer-inner > ul > li > ul > ul > li {
   width: 100%;
-  font-size: 70%;
-  line-height: 1rem;
+  font-size: 88%;
+  line-height: 1.6rem;
   margin-bottom: 5px;
   padding-right: 10px;
 }
@@ -113,22 +157,24 @@ footer {
 }
 
 footer > .footer-wrap {
-  min-width: 1190px;
+  min-width: auto;
   background-color: #1f2024;
-  padding: 0 20px;
+  padding: 0;
 }
 
 footer > .footer-wrap > .footer {
   position: relative;
   max-width: 1190px;
-  height: 60px;
+  height: auto;
   margin: 0 auto;
+  padding: 20px 20px;
   font-family: sans-serif;
 }
 
 footer > .footer-wrap > .footer > nav {
-  position: absolute;
-  top: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
   display: block;
 }
 
@@ -138,12 +184,13 @@ footer > .footer-wrap > .footer > nav > ul {
 }
 
 footer > .footer-wrap > .footer > nav > ul > li {
-  float: left;
-  margin-right: 30px;
+  float: none;
+  display: block;
+  margin: 0 0 20px;
 }
 
 footer > .footer-wrap > .footer > nav > ul > li > a {
-  font-size: 0.75em;
+  font-size: 0.875em;
   font-family: sans-serif;
   text-decoration: none;
   color: #ffffff;
@@ -159,9 +206,9 @@ footer > .footer-wrap > .footer > nav > ul > li > a:hover {
 
 footer > .footer-wrap > .footer > .copyright {
   font-family: sans-serif;
-  position: absolute;
-  top: 25px;
-  right: 0;
+  position: relative;
+  top: 0;
+  left: 0;
   color: #898991;
   font-size: 0.75em;
 }
