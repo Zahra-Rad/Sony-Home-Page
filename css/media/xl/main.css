@@ -270,7 +270,6 @@
   > .panels-container
   > .panels-block-2x2
   > .panel-landscape {
-  padding-bottom: 6vw;
   min-height: 425px;
   width: 585px;
   padding-top: 282px;
@@ -397,7 +396,7 @@
   > .panels-container
   > .panels-block-2x2
   > .panel-portrait {
-  padding-top: 710px;
+  padding-top: 707px;
   min-height: 850px;
   width: 585px;
 }
@@ -411,7 +410,7 @@
   > .panel-image {
   border: 1px solid #bfbfbf;
   transition: 300ms ease-out;
-  height: 710px;
+  height: 707px;
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -576,4 +575,296 @@
   > a:last-of-type:hover
   > span {
   color: black;
+}
+
+.container
+  > .inner
+  > .panels
+  > .panels-container
+  > .panels-block-2x2
+  > .panel-landscape
+  > .panel-content
+  > a:last-of-type {
+  margin-top: 2px;
+  font-size: 0.92rem;
+  color: #3865e0;
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.375rem;
+}
+
+.container
+  > .inner
+  > .panels
+  > .panels-container
+  > .panels-block-2x2
+  > .panel-landscape
+  > .panel-content
+  > a:last-of-type
+  > span {
+  /* height: 12px; */
+  margin-left: 5px;
+  top: 2px;
+  /* width: 7px; */
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container
+  > .inner
+  > .panels
+  > .panels-container
+  > .panels-block-2x2
+  > .panel-landscape
+  > .panel-content
+  > a:last-of-type:hover {
+  text-decoration: underline;
+}
+
+.container
+  > .inner
+  > .panels
+  > .panels-container
+  > .panels-block-2x2
+  > .panel-landscape
+  > .panel-content
+  > a:last-of-type:hover
+  > span {
+  color: black;
+}
+
+.container > .inner > .socials {
+  display: block;
+}
+
+.container > .inner > .socials > .social-title {
+  margin: 80px 0 32px;
+}
+
+.container > .inner > .socials > .social-title > h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  color: #656565;
+}
+
+.container > .inner > .socials > .social-logo {
+  width: 480px;
+  display: block;
+}
+
+.container > .inner > .socials > .social-logo > ul {
+  display: flex;
+  align-items: center;
+}
+
+.container > .inner > .socials > .social-logo > ul > li {
+  list-style: none;
+  margin-right: 64px;
+  opacity: 1;
+}
+
+.container > .inner > .socials > .social-logo > ul > li:hover {
+  color: #656565;
+  opacity: 0.6;
+}
+
+.container > .inner > .social-policy {
+  margin: 30px 0 0;
+  width: 200px;
+}
+
+.container > .inner > .social-policy > a {
+  text-decoration: none;
+  color: #656565;
+  font-family: sans-serif;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.container > .inner > .social-policy > a > span {
+  margin-left: 5px;
+  font-size: 20px;
+  top: 2px;
+  position: relative;
+  line-height: 1px;
+}
+
+.container > .inner > .social-policy > a:hover {
+  text-decoration: underline;
+}
+
+.container > .inner > .social-policy > a:hover > span {
+  color: black;
+}
+
+.container > .inner > section.news {
+  min-height: 370px;
+  padding-top: 87px;
+  text-align: center;
+  display: block;
+}
+
+.container > .inner > section.news > div {
+  text-align: left;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.container > .inner > section.news > div > header {
+  margin-bottom: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.container > .inner > section.news > div > header > h2 {
+  font-family: sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+  color: #656565;
+}
+
+.container > .inner > section.news > div > header > a {
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #656565;
+}
+
+.container > .inner > section.news > div > header > a > span {
+  position: relative;
+  top: 1px;
+  margin-left: 5px;
+  line-height: 1;
+}
+
+.container > .inner > section.news > div > header > a:hover {
+  text-decoration: underline;
+}
+
+.container > .inner > section.news > div > header > a:hover > span {
+  color: #000;
+}
+
+.container > .inner > section.news > div > ul {
+  width: 100%;
+  list-style: none;
+  display: block;
+}
+
+.container > .inner > section.news > div > ul > li {
+  margin-bottom: 7px;
+  display: list-item;
+}
+
+.container > .inner > section.news > div > ul > li > a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  width: 100%;
+  color: #656565;
+  cursor: pointer;
+}
+
+.container > .inner > section.news > div > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.container > .inner > section.news > div > ul > li > a > div.time {
+  width: 120px;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  vertical-align: top;
+  color: #656565;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.container > .inner > section.news > div > ul > li > a > div{
+  font-size: .85rem;
+  line-height: 2rem;
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.container > .inner > section.news > div > ul > li > a > div>span{
+  font-family: sans-serif;
+  line-height: 2rem;
+  color: #000;
+  display: block;
+}
+
+.container > .inner > section.news > a{
+  display: inline-flex;
+  width: auto;
+  height: 58px;
+  margin: 0 auto;
+  min-width: 384px;
+  position: relative;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  justify-content: space-between;
+  padding: 0 38px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.container > .inner > section.news > a>span{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  color: #656565;
+  font-size: 1rem;
+}
+
+.container > .inner > section.news > a>span>span{
+  line-height: 1.2;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.container > .inner > section.news > a>span>span>img{
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  width: 13px;
+}
+
+.container > .inner > section.news > a>span.fa-angle-right{
+  padding-left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 38px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #656565;
+  font-size: 18px;
+}
+
+.container > .inner > section.news > a:hover{
+  background-color: #d3d3d3;
+}
+
+.container > .inner > section.news > a:hover>span.fa-angle-right{
+  color: #000;
+}
+
+.container > .inner > section.news > a:hover>span>span{
+  color: #fff;
 }
