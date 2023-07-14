@@ -1,3 +1,8 @@
+.site-map{
+  height: 0;
+  visibility: hidden;
+}
+
 div.english-footer {
   display: block;
 }

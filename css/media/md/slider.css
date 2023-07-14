@@ -228,3 +228,8 @@
 .slider-controls > div > div > .slider-controls-play > div > .fa-play {
   font-size: 9.5px;
 }
+
+.scroll-guide {
+  visibility: hidden;
+  height: 0;
+}

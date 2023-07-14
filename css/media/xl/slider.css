@@ -18,6 +18,7 @@
   left: 0;
   overflow: hidden;
   white-space: nowrap;
+  background-color: #000;
 }
 
 .slider-bg-cover {
@@ -39,6 +40,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 
 .slider-bar {
@@ -81,6 +83,7 @@
   border-bottom: none;
   border-left: none;
   cursor: pointer;
+  z-index: 60;
 }
 
 .slider-bar > .slider-section-container {
@@ -105,6 +108,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  transition: 380ms;
 }
 
 .slider-section-1 {
@@ -192,16 +196,25 @@
   float: left;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .slider-controls > div > div > .slider-controls-dots > .dot {
   width: 5px;
   height: 5px;
-  background-color: hsla(0, 0%, 100%, 0.25);
-  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 3px;
   margin-right: 8px;
   cursor: pointer;
+  transition: 100ms ease-out;
+  overflow: hidden;
+}
+
+.slider-controls > div > div > .slider-controls-dots > .dot > div {
+  width: 0%;
+  height: 100%;
+  display: block;
+  background-color: transparent;
 }
 
 .slider-controls > div > div > .slider-controls-play {
@@ -228,4 +241,9 @@
 
 .slider-controls > div > div > .slider-controls-play > div > .fa-play {
   font-size: 9.5px;
+}
+
+.scroll-guide {
+  visibility: hidden;
+  height: 0;
 }

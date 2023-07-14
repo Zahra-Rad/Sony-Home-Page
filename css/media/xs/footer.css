@@ -1,8 +1,39 @@
+.to-top {
+  display: block;
+  position: relative;
+}
+
+.to-top > .inner > a {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.125em;
+  bottom: 15px;
+  display: block;
+  height: 28px;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  transition: 200ms ease-in-out 0s;
+  width: 36px;
+  z-index: 50;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.to-top > .inner > a > span {
+  margin: 0 auto;
+  height: 11px;
+  position: relative;
+  /* top: 1px; */
+  width: 20px;
+}
+
 .site-map {
   display: block;
 }
 
-.site-map > a {
+.site-map > div {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -16,7 +47,7 @@
   cursor: pointer;
 }
 
-.site-map > a > h2 {
+.site-map > div > h2 {
   color: #656565;
   font-family: sans-serif;
   font-size: 1rem;
@@ -24,13 +55,13 @@
   display: block;
 }
 
-.site-map > a > div {
+.site-map > div > div {
   width: 14px;
   height: 14px;
   position: relative;
 }
 
-.site-map > a > div > span {
+.site-map > div > div > span {
   position: absolute;
   color: #656565;
 }
@@ -39,35 +70,32 @@ div.english-footer {
   display: block;
 }
 
-div.english-footer > nav {
+div.english-footer > nav.siteMapNav {
   background-color: #efefef;
-  height: 2256px;
+  height: 0px;
   overflow: hidden;
   min-width: 100%;
   display: block;
   transition: 300ms ease-out;
-  background-color: #efefef;
 }
 
 div.english-footer > nav > div.english-footer-inner {
   margin: 0 auto;
   width: 100%;
   display: block;
-  background-color: #efefef;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul {
   display: flex;
   color: #656565;
   flex-wrap: wrap;
-  background-color: #efefef;
   padding: 10px 20px;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul > li {
   width: 100%;
   color: #656565;
-  list-style: none;
+  display: list-item;
   margin-bottom: 30px;
   background-color: #efefef;
 }
@@ -89,14 +117,17 @@ div.english-footer > nav > div.english-footer-inner > ul > li > ul > li {
   width: 100%;
   font-size: 88%;
   line-height: 1.6rem;
+  list-style: none;
   margin-bottom: 5px;
   padding-right: 10px;
+  color: #656565;
   font-family: sans-serif;
 }
 
 div.english-footer > nav > div.english-footer-inner > ul > li > ul > li > a {
   color: #656565;
   text-decoration: none;
+  /* visibility: hidden; */
 }
 
 div.english-footer
@@ -136,6 +167,7 @@ div.english-footer
   font-family: sans-serif;
   color: #656565;
   text-decoration: none;
+  background-color: #efefef;
   cursor: pointer;
 }
 
