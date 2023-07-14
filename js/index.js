@@ -1115,7 +1115,7 @@ if (screenWidth >= 0 && screenWidth <= 640) {
     }
     moveDot(activeDot);
   }, 5000);
-} else if (screenWidth >= 640) {
+} else if (screenWidth > 640 && screenWidth <= 1190) {
   const item = document.querySelectorAll(".item");
   const btnSearch = document.querySelectorAll(".icon-search");
 
@@ -1200,6 +1200,201 @@ if (screenWidth >= 0 && screenWidth <= 640) {
       document.querySelector(".searchBox-container").classList.add("hidden");
       btnSearch[0].classList.remove("hidden");
     });
+
+  document.querySelector("body").addEventListener("click", function (x) {
+    if (x.target == document.querySelector(".searchBox-container")) {
+      document.querySelector(".searchBox-container").classList.add("hidden");
+      btnSearch[0].classList.remove("hidden");
+    }
+  });
+
+  const fills = document.querySelectorAll(".fill");
+  const parent = document.querySelector(".slider-section-container");
+  const bgImg = document.querySelectorAll(".bgImg");
+  const dots = document.querySelectorAll(".dot");
+
+  let activeDot;
+  for (let i = 0; i < 5; i++) {
+    if (dots[i].classList.contains("active-dot")) {
+      activeDot = i;
+    }
+  }
+
+  function moveDot(activeDot) {
+    dots[activeDot].classList.add("active-dot");
+    dots[activeDot].style.width = "40%";
+    fills[activeDot].style.backgroundColor = "white";
+    bgImg[activeDot].style.opacity = "1";
+    let widthfill = 0;
+    let key = setInterval(function () {
+      widthfill += 1;
+      fills[activeDot].style.width = `${widthfill}%`;
+      if (widthfill >= 100) {
+        clearInterval(key);
+      }
+    }, 50);
+    setTimeout(function () {
+      const sections = document.querySelectorAll(".slider-section");
+      const caption = document.querySelectorAll(".caption");
+      const img = document.querySelectorAll(".img");
+      const span = document.querySelectorAll(".span");
+      const h2 = document.querySelectorAll(".h2");
+      const p = document.querySelectorAll(".p");
+      let address = img[0].getAttribute("src");
+      let spanText = span[0].textContent;
+      let h2Text = h2[0].textContent;
+      let pText = p[0].textContent;
+      fills[activeDot].style.backgroundColor = "transparent";
+      dots[activeDot].classList.remove("active-dot");
+      dots[activeDot].style.width = "5px";
+      bgImg[activeDot].style.opacity = "0";
+      setTimeout(() => {
+        sections[1].style.marginLeft =
+          "calc((-50%) + ((1190px - 695px) / 2) - 120px)";
+        caption[1].classList.add("hidden");
+        caption[1].style.opacity = "0";
+        caption[2].classList.remove("hidden");
+        caption[2].style.opacity = "1";
+        parent.removeChild(sections[0]);
+
+        let sec0 = document.createElement("div");
+        sec0.classList.add("slider-section");
+        parent.appendChild(sec0);
+
+        let pic0 = document.createElement("picture");
+        sec0.appendChild(pic0);
+
+        let img0 = document.createElement("img");
+        img0.setAttribute("src", `${address}`);
+        img0.classList.add("img");
+        pic0.appendChild(img0);
+
+        let cap0 = document.createElement("div");
+        cap0.classList.add("caption");
+        cap0.classList.add("hidden");
+        sec0.appendChild(cap0);
+
+        let sp0 = document.createElement("span");
+        sp0.textContent = `${spanText}`;
+        sp0.classList.add("span");
+        cap0.appendChild(sp0);
+
+        let a0 = document.createElement("a");
+        a0.setAttribute("href", "");
+        cap0.appendChild(a0);
+
+        let h20 = document.createElement("h2");
+        h20.textContent = `${h2Text}`;
+        h20.classList.add("h2");
+        a0.appendChild(h20);
+
+        let p0 = document.createElement("p");
+        p0.textContent = `${pText}`;
+        p0.classList.add("p");
+        a0.appendChild(p0);
+      }, 100);
+    }, 5000);
+  }
+  moveDot(activeDot);
+  setInterval(function () {
+    activeDot++;
+    if (activeDot == 5) {
+      activeDot = 0;
+    }
+    moveDot(activeDot);
+  }, 5000);
+} else if (screenWidth >= 1191) {
+  const item = document.querySelectorAll(".item");
+  const btnSearch = document.querySelectorAll(".icon-search");
+
+  item[1].addEventListener("click", function () {
+    document.querySelector(".businesses").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[2].addEventListener("click", function () {
+    document.querySelector(".about").classList.toggle("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[3].addEventListener("click", function () {
+    document.querySelector(".tech").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[4].addEventListener("click", function () {
+    document.querySelector(".employees").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[5].addEventListener("click", function () {
+    document.querySelector(".sustain").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[6].addEventListener("click", function () {
+    document.querySelector(".design").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".investor").classList.remove("show");
+  });
+
+  item[7].addEventListener("click", function () {
+    document.querySelector(".investor").classList.toggle("show");
+    document.querySelector(".about").classList.remove("show");
+    document.querySelector(".businesses").classList.remove("show");
+    document.querySelector(".tech").classList.remove("show");
+    document.querySelector(".employees").classList.remove("show");
+    document.querySelector(".sustain").classList.remove("show");
+    document.querySelector(".design").classList.remove("show");
+  });
+
+  btnSearch[0].addEventListener("click", function () {
+    document.querySelector(".searchBox-container").classList.remove("hidden");
+    btnSearch[0].classList.add("hidden");
+  });
+
+  document
+    .querySelector(".close-search")
+    .addEventListener("click", function () {
+      document.querySelector(".searchBox-container").classList.add("hidden");
+      btnSearch[0].classList.remove("hidden");
+    });
+
+  document.querySelector("body").addEventListener("click", function (x) {
+    if (x.target == document.querySelector(".searchBox-container")) {
+      document.querySelector(".searchBox-container").classList.add("hidden");
+      btnSearch[0].classList.remove("hidden");
+    }
+  });
 
   const fills = document.querySelectorAll(".fill");
   const parent = document.querySelector(".slider-section-container");
@@ -1372,13 +1567,13 @@ if (screenWidth >= 0 && screenWidth <= 640) {
 
   //   console.log(activeDot);
   //   activeDot++;
-    // if (activeDot == 5) {
-    //   activeDot = 0;
-    // }
-    // moveDot(activeDot);
-    // setInterval(function () {
+  // if (activeDot == 5) {
+  //   activeDot = 0;
+  // }
+  // moveDot(activeDot);
+  // setInterval(function () {
 
-    // }, 5000);
+  // }, 5000);
   // });
 
   // function moveDot(activeDot) {

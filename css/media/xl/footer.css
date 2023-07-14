@@ -1,3 +1,39 @@
+.to-top {
+  display: block;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.to-top > .inner > a {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.125em;
+  bottom: 15px;
+  display: block;
+  height: 28px;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  transition: 200ms ease-out 0s;
+  width: 36px;
+  z-index: 50;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.to-top > .inner > a:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.to-top > .inner > a > span {
+  margin: 0 auto;
+  height: 11px;
+  position: relative;
+  /* top: 1px; */
+  width: 21px;
+}
+
 .site-map{
   height: 0;
   visibility: hidden;
